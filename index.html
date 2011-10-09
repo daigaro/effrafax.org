@@ -12,6 +12,7 @@
 			$(function(){
 				$("#site-container").layout({
 					type: "border",
+					hgap: 5, vgap: 5,
 					items: [
 						$("#header").addClass("north"),
 						$("#menu").addClass("west"),
@@ -27,9 +28,9 @@
 	</head>
 	<body>
 		<div id="site-container">
-			<div id="header">North</div>
-			<div id="menu">West</div>
-			<div id="main">Center</div>
+			<div id="header" style="background: #ff0000;">North</div>
+			<div id="menu" style="background: #00ff00;">West</div>
+			<div id="main" style="background: #0000ff;">Center</div>
 		</div>
 		<div id="logo"></div>
 	</body>
