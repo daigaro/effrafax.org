@@ -1,0 +1,11 @@
+.north .west .center {
+	display: inline-block;
+}
+
+.north {
+	height: 105;
+}
+
+.west {
+	width: 50px;
+}
