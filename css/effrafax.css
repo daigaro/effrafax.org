@@ -1,11 +1,17 @@
-.north .west .center {
+.north, .west, .center, .south {
 	display: inline-block;
 }
 
 .north {
-	height: 105;
+	width: 100%;
+	height: 105px;
 }
 
 .west {
 	width: 50px;
+}
+
+.south {
+	width: 100%;
+	height: 25px;
 }
