@@ -30,7 +30,11 @@
 				resize();
 				$(window).resize(resize);
 			});
-		
+			
+			$(function(){
+				$("#menu-tabs").tabs();
+			});
+			
 			$(function(){
 				(new Word("EFFRAFAX")).drawOn(Raphael('logo', 819, 105));
 			});
@@ -40,7 +44,16 @@
 		<div id="site-container">
 			<div id="header"><div id="logo"></div></div>
 			<div id="menu"></div>
-			<div id="main"></div>
+			<div id="main">
+				<div id="menu-tabs">
+					<ul>
+						<li><a href="#knowledge">Knowledge</a></li>
+						<li><a href="#technologies">Technologies</a></li>
+					</ul>
+					<div id="knowledge"><h1>Knowledge</h1></div>
+					<div id="technologies"><h1>Technologies</h1></div>
+				</div>
+			</div>
 			<div id="footer"></div>
 		</div>
 	</body>
