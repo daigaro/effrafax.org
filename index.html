@@ -10,17 +10,20 @@
 		<script src="js/effrafax-logo.js"></script>
 		<script type="text/javascript">
 			$(function(){
-				$("#site-container").layout({
-					type: "border",
-					hgap: 5, vgap: 5,
-					resize: false,
-					items: [
-						$("#header").addClass("north"),
-						$("#menu").addClass("west"),
-						$("#main").addClass("center"),
-						$("#footer").addClass("south"),
-					]
-				});
+				var resize = function() {
+					$("#site-container").layout({
+						type: "border",
+						hgap: 5, vgap: 5,
+						resize: false,
+						items: [
+							$("#header").addClass("north"),
+							$("#menu").addClass("west"),
+							$("#main").addClass("center"),
+							$("#footer").addClass("south"),
+						]
+					});
+				}
+				resize();
 			});
 		
 			$(function(){
@@ -30,10 +33,10 @@
 	</head>
 	<body>
 		<div id="site-container">
-			<div id="header"><div id="logo"></div></div>
-			<div id="menu"></div>
-			<div id="main"></div>
-			<div id="footer"></div>
+			<div id="header" style="background: #ff0000;"><div id="logo"></div></div>
+			<div id="menu" style="background: #00ff00;"></div>
+			<div id="main" style="background: #0000ff;"></div>
+			<div id="footer" style="background: #cccccc;"></div>
 		</div>
 	</body>
 </html>
