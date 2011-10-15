@@ -14,6 +14,10 @@
 		<script src="js/effrafax-logo.js"></script>
 		<script type="text/javascript">
 			$(function(){
+				$("#menu-tabs").tabs();
+			});
+			
+			$(function(){
 				var resize = function() {
 					$("#site-container").layout({
 						type: "border",
@@ -26,19 +30,16 @@
 							$("#footer").addClass("south"),
 						]
 					});
+					$("#menu-tabs").height($("#menu").height() - 7);
 				}
-				resize();
 				$(window).resize(resize);
+				resize();
 			});
 			
 			$(function(){
 				$("#header, #menu, #footer")
 					.addClass("ui-widget-content")
 					.addClass("ui-corner-all");
-			});
-			
-			$(function(){
-				$("#menu-tabs").tabs();
 			});
 			
 			$(function(){
