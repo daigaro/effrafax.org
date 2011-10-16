@@ -18,6 +18,14 @@
 			});
 			
 			$(function(){
+				$("#header, #menu, #footer")
+					.addClass("ui-widget-content")
+					.addClass("ui-corner-all");
+				$("#university, #technology, #consultancy, #community")
+					.addClass("content-container");
+			});
+			
+			$(function(){
 				var resize = function() {
 					$("#site-container").layout({
 						type: "border",
@@ -29,17 +37,26 @@
 							$("#main").addClass("center"),
 							$("#footer").addClass("south"),
 						]
-					});
-					$("#menu-tabs").height($("#menu").height() - 7);
+					});					
+					var resizeMenuTabs = function() {
+						var m = $("#menu-tabs");
+						m.height($("#menu").height() - 7);
+
+						var p = m.padding();
+						var c = $("#university").padding();
+						$("#university, #technology, #consultancy, #community")
+							.height(
+								m.height() - 
+								(
+									m.children("ul").outerHeight(true) + 
+									p.top + p.bottom + c.top + c.bottom
+								)
+							);
+					};
+					resizeMenuTabs();
 				}
 				$(window).resize(resize);
 				resize();
-			});
-			
-			$(function(){
-				$("#header, #menu, #footer")
-					.addClass("ui-widget-content")
-					.addClass("ui-corner-all");
 			});
 			
 			$(function(){
