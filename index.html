@@ -39,16 +39,19 @@
 						]
 					});					
 					var resizeMenuTabs = function() {
-						$("#menu-tabs").height($("#menu").height() - 7);
-
 						var m = $("#menu-tabs");
-						var u = $("#menu-tabs ul");
+						m.height($("#menu").height() - 7);
+
 						var p = m.padding();
 						var c = $("#university").padding();
 						$("#university, #technology, #consultancy, #community")
 							.height(
 								m.height() - 
-								(u.outerHeight(true) + p.top + p.bottom + c.top + c.bottom));
+								(
+									m.children("ul").outerHeight(true) + 
+									p.top + p.bottom + c.top + c.bottom
+								)
+							);
 					};
 					resizeMenuTabs();
 				}
