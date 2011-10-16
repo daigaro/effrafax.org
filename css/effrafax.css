@@ -31,3 +31,7 @@ html, body {
 .center {
 	height: 100%;
 }
+
+.content-container {
+	overflow: auto;
+}
