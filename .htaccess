@@ -1,0 +1,3 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^show/([^/]+)/([^/]+) /frontController.php?part=$1&section=$2 [NC]
