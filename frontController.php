@@ -1,5 +1,5 @@
 <?php
-	require('smarty/lib/Smarty.class.php');
+	require('smarty/libs/Smarty.class.php');
 	$smarty = new Smarty();
 	$smarty->setTemplateDir('smarty/templates');
 	$smarty->setCompileDir('smarty/templates_c');
