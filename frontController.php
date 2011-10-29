@@ -1,4 +1,19 @@
 <?php
+	function parts() {
+		$parts = array();
+
+		if ($handle = opendir("parts")) {
+			while (($file = readdir($handle)) !== false) {
+				if ($file != '.' && $file != '..') {
+					array_push($parts, $file);
+				}
+			}
+			closedir($dh);
+		}
+
+		return $parts;
+	}
+	
 	require('smarty/libs/Smarty.class.php');
 	$smarty = new Smarty();
 	$smarty->setTemplateDir('smarty/templates');
@@ -6,5 +21,6 @@
 	$smarty->setCacheDir('smarty/cache');
 	$smarty->setConfigDir('smarty/configs');
 	
-	$smarty->testInstall();
+	$smarty->assign('parts', $parts);
+	$smarty->display('index.tpl');
 ?>
