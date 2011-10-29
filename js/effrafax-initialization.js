@@ -8,6 +8,7 @@ $(function(){
 		.addClass("ui-corner-all");
 	$("#university, #technology, #consultancy, #community")
 		.addClass("content-container");
+	$("#viewport").addClass("viewport");
 });
 
 $(function(){
