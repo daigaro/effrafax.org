@@ -26,7 +26,7 @@
 						{/foreach}
 					</ul>
 					{foreach $parts as $part}
-					<div id="#{$part}"><h1>{$part}</h1></div>
+					<div id="{$part}"><h1>{$part}</h1></div>
 					{/foreach}
 				</div>
 			</div>
