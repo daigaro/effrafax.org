@@ -8,7 +8,7 @@
 					array_push($parts, $file);
 				}
 			}
-			closedir($dh);
+			closedir($handle);
 		}
 
 		return $parts;
