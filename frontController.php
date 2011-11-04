@@ -21,6 +21,6 @@
 	$smarty->setCacheDir('smarty/cache');
 	$smarty->setConfigDir('smarty/configs');
 	
-	$smarty->assign('parts', $parts);
+	$smarty->assign('parts', parts());
 	$smarty->display('index.tpl');
 ?>
