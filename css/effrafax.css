@@ -9,38 +9,6 @@ body {
 	padding-top: 50px;
 }
 
-#site-container {
-	width: 100%;
+#community {
 	height: 100%;
-}
-
-.north, .west, .center, .south {
-	display: inline-block;
-}
-
-.north {
-	width: 100%;
-	height: 105px;
-}
-
-.west {
-	width: 187px;
-}
-
-.south {
-	width: 100%;
-	height: 50px;
-}
-
-.center {
-	height: 100%;
-}
-
-.content-container {
-	overflow: auto;
-}
-
-.viewport {
-	width: 100%;
-	height: 99%;
 }

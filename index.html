@@ -6,12 +6,6 @@
 		<link rel="stylesheet" type="text/css" href="css/theme/overcast/jquery-ui-overcast.css"/>
 		<script src="js/jquery-1.6.4.min.js"></script>
 		<script src="js/raphael-min.js"></script>
-		<script src="js/jquery.sizes.min.js"></script>		
-		<script src="js/jlayout.border.min.js"></script>		
-		<script src="js/jquery.jlayout.min.js"></script>		
-		<script src="js/ui/jquery.ui.core.min.js"></script>		
-		<script src="js/ui/jquery.ui.widget.min.js"></script>		
-		<script src="js/ui/jquery.ui.tabs.min.js"></script>		
 		<script src="js/effrafax-logo.js"></script>
 		<script src="js/effrafax-initialization.js"></script>
 	</head>
@@ -31,26 +25,14 @@
 		</div>
 		<div class="container">
 			<div class="hero-unit"><div id="logo"></div></div>
-		</div>
-		<div id="site-container">
-			<div id="menu"></div>
-			<div id="main">
-				<div id="menu-tabs">
-					<ul>
-						<li><a href="#university">University</a></li>
-						<li><a href="#technology">Technology</a></li>
-						<li><a href="#consultancy">Consultancy</a></li>
-						<li><a href="#community">Community</a></li>
-					</ul>
-					<div id="university"><h1>University</h1></div>
-					<div id="technology"><h1>Technology</h1></div>
-					<div id="consultancy"><h1>Consultancy</h1></div>
-					<div id="community">
-						<iframe id="viewport" src="http://effrafax-community.blogspot.com/"></iframe>
-					</div>
-				</div>
+			<div class="row">
+				<div id="university" class="span-one-third"><h1>University</h1></div>
+				<div id="technology" class="span-one-third"><h1>Technology</h1></div>
+				<div id="consultancy" class="span-one-third"><h1>Consultancy</h1></div>
 			</div>
-			<div id="footer"></div>
+			<div class="row">
+				<iframe id="community" class="span16" src="http://effrafax-community.blogspot.com/"></iframe>
+			</div>
 		</div>
 	</body>
 </html>
