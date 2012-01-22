@@ -12,7 +12,7 @@
 		<div class="topbar">
 			<div class="fill">
 				<div class="container">
-					<span class="brand">Effrafax</span>
+					<a class="brand" href="#">Effrafax</a>
 					<ul class="nav">
 						{foreach $parts as $part}
 						<li><a href="#{$part}">{$part}</a></li>
