@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>effrafax.org</title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap-1.4.0.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap-1.4.0.min.css"/>
 		<link rel="stylesheet" type="text/css" href="/css/effrafax.css"/>
 		<script src="/js/jquery-1.6.4.min.js"></script>
 		<script src="/js/raphael-min.js"></script>
