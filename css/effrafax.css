@@ -16,3 +16,10 @@ body {
 #community {
 	height: 100%;
 }
+
+h1 {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 500%
+}
